@@ -42,6 +42,18 @@ average = Ave(Month_Diff)
 # printing results
 print(f'Average Change: ${round(average,2)}')
 
+# Finding min/max position/index in Month_Diff
+
+minimum = Month_Diff.index(min(Month_Diff))
+maximum = Month_Diff.index(max(Month_Diff))
+
+# printing results
+print(f'Greatest Increase in Profits: {MonthList[maximum +1]} (${max(Month_Diff)})')
+print(f'Greatest Decrease in Profits: {MonthList[minimum +1]} (${min(Month_Diff)})')
+
+
+
+
 
 
 
